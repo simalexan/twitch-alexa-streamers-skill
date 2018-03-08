@@ -1,7 +1,7 @@
 const botBuilder = require('claudia-bot-builder');
 const AlexaMessageBuilder = require('alexa-message-builder');
 const rp = require('minimal-request-promise');
-const CLIENT_ID = 'p98wnek9q3t68rarz8b2ikdgcpf2ia';
+const CLIENT_ID = '<YOUR-TWITCH-CLIENT-ID>';
 
 module.exports = botBuilder(function (message){
   let intent = message.originalRequest.request.intent;
@@ -13,7 +13,7 @@ module.exports = botBuilder(function (message){
   if (intent.name == 'MostWatchedGameStreamer'){
     let gameName = intent.slots.game.value.toLowerCase();
     let platform = intent.slots.platform.value.toLowerCase();
-    
+
     console.log(gameName);
     console.log(platform);
 
