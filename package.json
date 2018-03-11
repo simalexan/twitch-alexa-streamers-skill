@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "alexa-message-builder": "^1.2.0",
-    "claudia-bot-builder": "^3.0.0",
+    "alexa-skill-kit": "^1.0.0",
     "minimal-request-promise": "^1.5.0"
   }
 }
